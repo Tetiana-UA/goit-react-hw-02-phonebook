@@ -1,0 +1,12 @@
+.form{
+    padding: 15px;
+}
+.formElement{
+    margin-bottom: 15px;
+}
+.formElement label{
+    margin-bottom: 15px;
+}
+.formButton{
+    width: 50px;
+}
