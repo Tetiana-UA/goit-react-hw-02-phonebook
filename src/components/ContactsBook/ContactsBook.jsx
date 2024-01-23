@@ -1,5 +1,7 @@
 import { Component } from "react";
 import { nanoid } from "nanoid";
+import styles from "./contacts-book.module.css";
+
 
 import ContactsForm from "./ContactsForm/ContactsForm";
 import ContactsList from "./ContactsList/ContactsList";
@@ -81,15 +83,14 @@ class ContactsBook extends Component {
     const contacts=this.getFilteredContacts();
 
     return (
-        <>
+        <div className={styles.wraper}>
         <h1>PhoneBook</h1>
         <ContactsForm onSubmit={addContact}/>
 
         <h2>Contacts</h2>
         <Filter changeFilter={changeFilter} filter={this.state.filter}/>
         <ContactsList items={contacts} deleteContact={deleteContact}/>
-        
-        </>
+        </div>
  
 
     );

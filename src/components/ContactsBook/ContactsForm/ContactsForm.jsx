@@ -1,5 +1,5 @@
 import { Component } from "react";
-import styles from "./contacts-form.css";
+import styles from "./contacts-form.module.css";
 import { nanoid } from "nanoid";
 
 const INITIAL_STATE={
@@ -42,13 +42,33 @@ class ContactsForm extends Component {
             <form onSubmit={handleSubmit} className={styles.form} >
                 <div className={styles.formElement} >
                     <label htmlFor={contactNameId}>Name</label>
-                    <input value={name} type="text" name="name" required   id={contactNameId} onChange={handleChange} />
+                    <input 
+                    className={styles.formInput} 
+                    value={name} 
+                    type="text" 
+                    name="name" 
+                    required   
+                    id={contactNameId} 
+                    onChange={handleChange} 
+                    />
                 </div>
                 <div className={styles.formElement}>
                     <label htmlFor={contactNumberId}>Number</label>
-                    <input value={number} type="tel" name="number" required   id={contactNumberId} onChange={handleChange} />
+                    <input 
+                    className={styles.formInput} 
+                    value={number} 
+                    type="tel" 
+                    name="number" 
+                    required   
+                    id={contactNumberId} 
+                    onChange={handleChange}
+                    />
                 </div>
-                <button type="submit">Add contact</button>
+                <button 
+                className={styles.formButton} 
+                type="submit">
+                    Add contact
+                </button>
             </form>
         );
     }

@@ -1,4 +1,4 @@
-import styles from "./filter.css";
+import styles from "./filter.module.css";
 
 const Filter = ({filter, changeFilter}) => {
     

@@ -6,6 +6,11 @@
 }
 .formElement{
     margin-bottom: 15px;
+    
+}
+     
+.formInput{
+    margin-bottom: 15px;
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
@@ -15,12 +20,10 @@
 }
         
         
-.input:hover {
-    background-color: #45a049;
+.formInput:hover {
+    background-color: #17521a;
 }
-.formElement label{
-    margin-bottom: 15px;
-}
+
 .formButton{
     width: 50px;
 }
