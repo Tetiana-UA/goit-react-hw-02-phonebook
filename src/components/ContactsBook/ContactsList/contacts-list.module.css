@@ -1,7 +1,15 @@
 .list{
-    padding-left: 15px;
+    padding: 15px;
+    width: 600px;
+    padding-left: 20px;
 }
-.h2{
-    
-    color: aqua;
+.listLi{
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.listButton{
+margin-left: 50px;
 }

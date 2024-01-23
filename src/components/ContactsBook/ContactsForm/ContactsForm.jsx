@@ -41,7 +41,7 @@ class ContactsForm extends Component {
 
             <form onSubmit={handleSubmit} className={styles.form} >
                 <div className={styles.formElement} >
-                    <label htmlFor={contactNameId}>Name</label>
+                    <label className={styles.formLabel} htmlFor={contactNameId}>Name</label>
                     <input 
                     className={styles.formInput} 
                     value={name} 
@@ -53,7 +53,7 @@ class ContactsForm extends Component {
                     />
                 </div>
                 <div className={styles.formElement}>
-                    <label htmlFor={contactNumberId}>Number</label>
+                    <label className={styles.formLabel} htmlFor={contactNumberId}>Number</label>
                     <input 
                     className={styles.formInput} 
                     value={number} 

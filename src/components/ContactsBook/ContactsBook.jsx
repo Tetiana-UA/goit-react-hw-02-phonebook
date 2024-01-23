@@ -84,10 +84,10 @@ class ContactsBook extends Component {
 
     return (
         <div className={styles.wraper}>
-        <h1>PhoneBook</h1>
+        <h2 className={styles.title}>PhoneBook</h2>
         <ContactsForm onSubmit={addContact}/>
 
-        <h2>Contacts</h2>
+        <h2 className={styles.title}>Contacts</h2>
         <Filter changeFilter={changeFilter} filter={this.state.filter}/>
         <ContactsList items={contacts} deleteContact={deleteContact}/>
         </div>
