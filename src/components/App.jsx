@@ -11,7 +11,7 @@ class App extends Component {
   
   state = {
     contacts: [
-        {id: "1111", name:"2222", number:"3333"},
+        {id: "1", name:"Тетяна", number:"0979858200"},
     ],
     filter: '',
   }

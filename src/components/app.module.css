@@ -1,7 +1,7 @@
 .wraper{
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 0 50px;
     height: '100vh';
     
 
@@ -9,5 +9,5 @@
 .title{
     font-size: 40px;
     color: rgb(31, 58, 149);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
