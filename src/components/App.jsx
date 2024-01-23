@@ -13,7 +13,7 @@ export const App = () => {
       }}
     >
       <ContacsBook/>
-      React homework template
+     
     </div>
   );
 };

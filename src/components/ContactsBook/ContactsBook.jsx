@@ -1,19 +1,28 @@
 import { Component } from "react";
 import { nanoid } from 'nanoid';
+import ContactsForm from "./ContactsForm/ContactsForm";
+import ContactsList from "./ContactsList/ContactsList";
 
 
 class ContacsBook extends Component {
   
   state = {
-    contacts: [],
+    contacts: [
+        {id: "1111", name:"2222", number:"3333"},
+    ],
     filter: '',
-    name: '',
-    number: ''
+    
   }
 
   render() { 
+    const {contacts}=this.state;
     return (
- <PhoneBook/>
+        <>
+        <ContactsForm />
+        <ContactsList items={contacts}/>
+        
+        </>
+ 
 
     );
   }
